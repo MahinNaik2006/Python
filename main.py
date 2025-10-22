@@ -1,16 +1,20 @@
-# This is a sample Python script.
+# This is Magic method
+# suppose we have 2 vectors and you want to add them then you have to use the magic method
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# v1 = Vector(10,20)
+# v2 = Vector(10,20)
+# we can not just start add these 2 vector so we have these magic methods
 
+class Vector:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    def __add__(self, other):
+        print("add method is called")
+        print(f'{self.x + other.x},{self.y+other.y}')
 
+v1 = Vector(20,40)
+v2 = Vector(30,90)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+v1.__add__(v2)
