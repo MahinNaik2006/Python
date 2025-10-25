@@ -20,3 +20,5 @@ v2 = vector(20,30)
 v1.__add__(v2)          #30 50
 
 v1.show(v2)           #x:10,y: 20 x:20,y: 30
+
+# There is more magic methods just checkout in w3schools.com
