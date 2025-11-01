@@ -1,3 +1,0 @@
-Over here there is a new file created and this is the way of storing incoming data when the Decorator programme is run
-Addition is = 5
-The result is = 40
